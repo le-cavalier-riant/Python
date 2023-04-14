@@ -1,0 +1,5 @@
+abscisse,ordonnee,tour,taillePetite,difficulte,matrice,vie,inventaire
+
+matrice = [x x x x x],[x x x x x],[x x x x x],[x x x x x],[x x x x x]
+	(dimensions : (2 * taillePetite + 1)²)
+inventaire = [x, x]

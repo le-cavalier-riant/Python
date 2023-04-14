@@ -1,0 +1,10 @@
+abscisse,ordonnee,tour,taille_petite,difficulte,matrice,vie,inventaire
+
+avec :
+	matrice = [[0, 0, 0, 0, 0],
+		   [0, 0, 0, 0, 0],
+		   [0, 0, 0, 0, 0],
+		   [0, 0, 0, 0, 0],
+		   [0, 0, 0, 0, 0]]
+
+	inventaire = [0,0]
