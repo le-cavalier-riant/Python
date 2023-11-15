@@ -1,21 +1,18 @@
 import math
 
-def pointFixe(fonction, valeurInitiale, erreurMinimale, iterationMaximale):
+def pointFixe(fonction, x_initial, erreurMinimale, iterationMaximale):
 
-	n = 0
-	valeur_n = valeurInitiale  # x à l'itération n
-	valeur_nPlus1 = fonction(valeur_n)  # x à litération n + 1
-	erreur_nplus1 = abs(valeur_nPlus1 - valeur_n)  # erreur a l'itération n + 1
-	print("Iteration n°", n, ", x = ", valeur_nPlus1, ", erreur = ", erreur_nplus1, sep = "")
-	valeur_n = valeur_nPlus1  # incrémentation
-
-	while erreur_nplus1 >= erreurMinimale and n < iterationMaximale:
-
-		n += 1
-		valeur_nPlus1 = fonction(valeur_n)
-		erreur_nplus1 = abs(valeur_nPlus1 - valeur_n)
-		print("Iteration n°", n, ", x = ", valeur_nPlus1, ", erreur = ", erreur_nplus1, sep = "")
-		valeur_n = valeur_nPlus1
+	iterationActuelle = 0
+	x_instantApres = fonction(x_initial)
+	erreurInstantApres = abs(x_instantApres - x_initial)
+	print("Iteration n°", iterationActuelle, ", x = ", x_instantApres, ", erreur = ", erreurInstantApres, sep = "")
+	x_initial = x_instantApres
+	while erreurInstantApres >= erreurMinimale and iterationActuelle < iterationMaximale:
+		iterationActuelle += 1
+		x_instantApres = fonction(x_initial)
+		erreurInstantApres = abs(x_instantApres - x_initial)
+		print("Iteration n°", iterationActuelle, ", x = ", x_instantApres, ", erreur = ", erreurInstantApres, sep = "")
+		x_initial = x_instantApres
 
 # math.sin(x) - 2 * x + 1 = 0
 	# x = (math.sin(x) + 1) / 2
