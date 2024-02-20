@@ -4,25 +4,25 @@
 #                                                                                                                     #
 # =================================================================================================================== #
 
-import jeuDeLaVie
+import jeu_de_la_vie
 
 taille = int(input("\n	Quelle taille de grille souhaitez-vous ?\n"))
-generationMaximum = int(input("\n	Combien de générations souhaitez-vous ?\n"))
+generation_maximum = int(input("\n	Combien de générations souhaitez-vous ?\n"))
 pause = int(input("\n	Quel temps de pause entre chaque générations souhaitez-vous ?\n"))
-afficherCadrillage = input("\n	Souhaitez-vous afficher le cadrillage ?\n		[N] : Non | [O] : Oui\n")
-if afficherCadrillage == "O" or afficherCadrillage == "o":
-	afficherCadrillage = True
+afficher_cadrillage = input("\n	Souhaitez-vous afficher le cadrillage ?\n		[N] : Non | [O] : Oui\n")
+if afficher_cadrillage == "O" or afficher_cadrillage == "o":
+    afficher_cadrillage = True
 else:
-	afficherCadrillage = False 
+    afficher_cadrillage = False
 
-grille1 = jeuDeLaVie.grilleAleatoire(taille)
-jeuDeLaVie.animerConsole(grille1, generationMaximum, pause, afficherCadrillage)
+grille1 = jeu_de_la_vie.grille_aleatoire(taille)
+jeu_de_la_vie.animer_console(grille1, generation_maximum, pause, afficher_cadrillage)
 
-# grille2 = jeuDeLaVie.grilleVide(taille)
-# jeuDeLaVie.ajouterLWSS(grille2, 50, 50)
-# jeuDeLaVie.ajouterCanonPlanneur(grille2, 10, 10)
-# jeuDeLaVie.ajouterPentominoR(grille2, 50, 50)
-# jeuDeLaVie.animerCanvas(grille2, generationMaximum, pause)
+# grille2 = jeu_de_la_vie.grilleVide(taille)
+# jeu_de_la_vie.ajouterLWSS(grille2, 50, 50)
+# jeu_de_la_vie.ajouterCanonPlanneur(grille2, 10, 10)
+# jeu_de_la_vie.ajouterPentominoR(grille2, 50, 50)
+# jeu_de_la_vie.animerCanvas(grille2, generationMaximum, pause)
 
 # =================================================================================================================== #
 #                                                                                                                     #
