@@ -15,14 +15,14 @@ if afficher_cadrillage == "O" or afficher_cadrillage == "o":
 else:
 	afficher_cadrillage = False
 
-grille1 = jeu_de_la_vie.grille_aleatoire(taille)
-jeu_de_la_vie.animer_console(grille1, generation_maximum, pause, afficher_cadrillage)
+# grille1 = jeu_de_la_vie.grille_aleatoire(taille)
+# jeu_de_la_vie.animer_console(grille1, generation_maximum, pause, afficher_cadrillage)
 
-# grille2 = jeu_de_la_vie.grille_vide(taille)
-# jeu_de_la_vie.ajouter_lwss(grille2, 50, 50)
-# jeu_de_la_vie.ajouter_canon_a_planneur(grille2, 10, 10)
-# jeu_de_la_vie.ajouter_pentomino_r(grille2, 50, 50)
-# jeu_de_la_vie.animer_canvas(grille2, generation_maximum, pause)
+grille2 = jeu_de_la_vie.grille_vide(taille)
+jeu_de_la_vie.ajouter_lwss(grille2, 50, 50)
+jeu_de_la_vie.ajouter_canon_a_planneur(grille2, 10, 10)
+jeu_de_la_vie.ajouter_pentomino_r(grille2, 40, 50)
+jeu_de_la_vie.animer_canvas(grille2, generation_maximum, pause)
 
 # =================================================================================================================== #
 #                                                                                                                     #
